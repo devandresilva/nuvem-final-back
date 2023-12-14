@@ -7,11 +7,16 @@ app.use(cors());
 const port = 3000;
 
 const pool = new Pool({
-  user: 'pokemon',
-  host: 'db',
-  database: 'pokemons',
-  password: 'pokemon', // Use a senha que você definiu anteriormente
+  user: 'pokeadm',
+  host: 'pokeapp.postgres.database.azure.com',
+  database: 'pokemonDev',
+  password: '#Pikachu22', // Use a senha que você definiu anteriormente
   port: 5432,
+  dialectOptions: {
+    ssl: {
+      rejectUnauthorized: false,
+    },
+  },
 });
 
 pool.connect((err, client, release) => {

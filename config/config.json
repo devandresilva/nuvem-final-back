@@ -1,0 +1,15 @@
+{
+  "development": {
+    "username": "pokeadm",
+    "password": "#Pikachu22",
+    "database": "pokemondev",
+    "host": "pokeapp.postgres.database.azure.com",
+    "port": 5432,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
