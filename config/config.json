@@ -1,5 +1,5 @@
 {
-  "production": {
+  "development": {
     "username": "pokeadm",
     "password": "#Pikachu22",
     "database": "pokemonprod",
